@@ -1,0 +1,15 @@
+.Manager {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(29, 40, 58, 0.93);
+
+  &__container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

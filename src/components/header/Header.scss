@@ -1,0 +1,32 @@
+.Header {
+  width: 100vw;
+  padding: 2rem;
+  background: linear-gradient(45deg, #0f172a, #1e293b, #0f172a);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__role {
+    font-weight: 100;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__container-icon {
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+}

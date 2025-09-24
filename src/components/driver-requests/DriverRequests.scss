@@ -1,0 +1,129 @@
+.DriverRequests {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(29, 40, 58, 0.93);
+
+  &__container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  &__status {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  & h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #aaaaaa;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__container-request {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  & h4 {
+    padding: 1.5rem;
+    border-bottom: 1px solid #eaeaea;
+    background: #f8f9fa;
+    font-size: 1.5rem;
+
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+  }
+
+  & p {
+    display: inline-block;
+
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+
+  &__route {
+    color: #666;
+    font-size: 0.95rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  &__request {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #eaeaea;
+  }
+
+  &__subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+
+  &__requests {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__container-btn {
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  & button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+  }
+
+  &__btn {
+    background: #007bff;
+
+    border: 1px solid #007bff;
+  }
+
+  &__btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  }
+
+  &__btn-danger {
+    background: #dc3545;
+
+    border: 1px solid #dc3545;
+  }
+  &__btn-danger:hover {
+    background: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+  }
+}

@@ -1,0 +1,42 @@
+.Request {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 1200px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__container-btn {
+    display: flex;
+
+    justify-content: end;
+    align-items: end;
+  }
+
+  &__table {
+    background-color: rgb(41, 50, 68);
+    color: white;
+  }
+
+  &__table .ant-table-tbody > tr > td,
+  &__table .ant-table-thead > tr > th {
+    background-color: rgb(41, 50, 68);
+    color: rgb(243, 240, 240);
+    border-bottom: 1px solid rgba(248, 246, 246, 0.15);
+  }
+
+  &__table .ant-table-thead > tr > th {
+    background-color: rgb(41, 50, 68);
+    border-bottom: 1px solid rgba(66, 65, 65, 0.993);
+  }
+
+  &__table .ant-table-tbody > tr:hover > td {
+    background-color: rgba(41, 50, 68, 0.959) !important;
+  }
+}
