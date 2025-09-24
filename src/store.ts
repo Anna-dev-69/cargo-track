@@ -64,6 +64,10 @@ export const useStore = create<StoreState>()(
       deleteRequest: (number) =>
         set((state) => ({
           requests: state.requests.filter((req) => req.number !== number),
+          drivers: state.drivers.map((d) => ({
+            ...d,
+            requests: d.requests.filter((req) => req.number !== number),
+          })),
         })),
 
       deleteCurrentDriverRequest: (number, currentDriverId) =>
